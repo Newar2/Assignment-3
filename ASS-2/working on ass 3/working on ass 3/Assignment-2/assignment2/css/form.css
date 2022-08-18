@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: black;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background: darkslateblue;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px black;
+}
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: wheat;
+}
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+.wrapper .input_field input[type=text],
+.wrapper .input_field .wrapper textarea {
+  border: 1px solid wheat;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper .input_field input[type=email],
+.wrapper .input_field .wrapper textarea {
+  border: 1px solid wheat;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper .input_field input[type=date],
+.wrapper .input_field .wrapper textarea {
+  border: 1px solid wheat;
+  width: 100%;
+  padding: 10px;
+}
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+}
+.wrapper .btn input[type=submit] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: red;
+  color: wheat;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.wrapper .btn input[type=submit]:hover {
+  background-color: rgb(157, 255, 0);
+  color: darkorange;
+  border-color: black;
+  text-transform: capitalize;
+}
+
+#error_message {
+  margin-bottom: 20px;
+  background: wheat;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}/*# sourceMappingURL=form.css.map */

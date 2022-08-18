@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact us form validation Using Javascript</title>
+  <link rel="stylesheet" type="text/css" href="css/form.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+</head>
+<body>
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="trout">
+          <a href="index.html">Trout Fish</a>
+        </div>
+        <div class="nav-toggle">
+            <span class="ani01"></span>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">Types</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+
+  <div class="wrapper">
+    <h2>Contact us</h2>
+    <div id="error_message"></div>
+   
+    <form id="myform"  action="https://formspree.io/f/xbjbjgrg"
+    method="POST" onsubmit="return validate()" onsubmit="return sendEmail()" style="border: dashed;">
+      <div class="input_field">
+          <input type="text" name="First Name" placeholder="First Name" id="fname">
+      </div>
+      <div class="input_field">
+        <input type="text"  name="Last Name" placeholder="Last Name" id="lname">
+      </div>
+      <div class="input_field">
+        <input type="email"  name="Email" placeholder="Email" id="email">
+      </div>
+      <div class="input_field">
+        <input type="date"  name="Date" placeholder="Date" id="date">
+      </div>
+      <div class="input_field">
+        <input type="text"  name="Phone" placeholder="Phone" id="phone">
+      </div>
+      <div class="input_field">
+          <textarea placeholder="Message"  name="Message" id="message"></textarea>
+      </div>
+      <div class="btn">
+          <input type="submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

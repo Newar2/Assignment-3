@@ -1,0 +1,580 @@
+/* We will use this stylesheet to design the main index.html page */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap");
+/*Setting Up the CSS Box Model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*Setting Up the Body*/
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: #e5e2e2;
+}
+
+body,
+input, textarea,
+button {
+  font-family: "Raleway", "sans-serif";
+  font-weight: 400;
+}
+
+/*Designing the header of the webpage*/
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+/*Designing main part of gallary*/
+.image_main {
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.image_main .pics {
+  padding: 50px;
+  margin: auto;
+}
+
+/*Designing the header*/
+.header .trout {
+  padding: 0 15px;
+}
+.header .trout a {
+  text-decoration: none;
+  font-size: 30px;
+  color: yellow;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: all 5s ease;
+}
+.header .nav-toggle {
+  width: 40px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  transition: all 0.5 ease;
+}
+.header .nav {
+  padding: 0 15px;
+}
+.header .nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: yellow;
+  padding: 25px 0;
+  display: block;
+  transition: all 0.5s ease;
+}
+.header .nav ul li a:hover {
+  color: white;
+}
+
+.types .container .row .about-img .img-box h1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+  25% {
+    top: 0px;
+    left: 100px;
+    background: blue;
+  }
+  50% {
+    top: 100px;
+    left: 100px;
+    background: yellow;
+  }
+  75% {
+    top: 100px;
+    left: 0px;
+    background: green;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+  25% {
+    top: 0px;
+    left: 100px;
+    background: blue;
+  }
+  50% {
+    top: 100px;
+    left: 100px;
+    background: yellow;
+  }
+  75% {
+    top: 100px;
+    left: 0px;
+    background: green;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    background: red;
+  }
+}
+/*Designing the container class*/
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.section-title h1 {
+  display: inline-block;
+  font-size: 40px;
+  color: darkslateblue;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+}
+
+.section-title h1::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 1;
+  bottom: -4px;
+  width: 80px;
+  height: 5px;
+  background-color: darkorange;
+}
+
+/*Design Contact Us Hyperlink - Class names are: btn and btn-01*/
+.btn-01 {
+  background-color: red;
+  color: whitesmoke;
+  border: 2px solid transparent;
+  padding: 10px 32px;
+  border-radius: 25px;
+  line-height: 1.5;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.btn-01:hover::after {
+  background-color: red;
+  color: darkorange;
+  border-color: black;
+  text-transform: capitalize;
+}
+.btn-01:focus {
+  outline: none;
+}
+
+/*Designing the Home Section*/
+.home-section {
+  background-image: url("../img/trout.jfif");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+}
+
+/*Extra Additions - For Animation*/
+.header {
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  animation: myfirst 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    background: darkslateblue;
+  }
+  to {
+    background: rgb(212, 212, 209);
+  }
+}
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    background: darkslateblue;
+  }
+  to {
+    background: rgb(235, 235, 229);
+  }
+}
+/* Designing types section */
+.types {
+  padding: 80px 0 0;
+}
+
+.types .about-img {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 15px;
+}
+
+.types .about-img .img-box {
+  position: relative;
+}
+
+.types .about-img .img-box .shape-02 {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #FF9800;
+  left: 30px;
+  top: 30px;
+  -webkit-animation: ani01 5s linear infinite;
+          animation: ani01 5s linear infinite;
+}
+
+.types .about-img .img-box img {
+  width: 100%;
+  display: block;
+}
+
+.types .about-content {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding: 0 15px;
+}
+
+.types .section-title {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.types .about-content p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 26px;
+  margin: 0;
+}
+
+.types .about-content .stats .stat-box {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.types .about-content .stats .stat-box h2 {
+  font-size: 40px;
+  color: #000000;
+  margin: 0 0 5px;
+}
+
+.types .about-content .stats .stat-box h5 {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.types .about-content .btn {
+  margin-top: 30px;
+}
+
+.type-section {
+  padding: 80px 0 0;
+}
+
+.type-section .work-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 15px;
+}
+
+.type-section .work-item-inner img {
+  width: 100%;
+  display: block;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.type-section .work-item-inner:hover img {
+  filter: grayscale(100%);
+  transform: scale(1);
+}
+
+.type-section .work-item-inner {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.type-section .work-item-inner .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+.type-section .work-item-inner:hover .overlay {
+  opacity: 1;
+}
+
+.type-section .work-item-inner .overlay h4 {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0;
+  transform: translateX(30px);
+  transition: all 0.5s ease;
+}
+
+.type-section .work-item-inner:hover .overlay h4 {
+  transform: translateX(0);
+}
+
+/* Designing Contact Section */
+.contact-section {
+  padding: 80px 0 80px;
+}
+
+.contact-section .contact-info {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact-section h4 {
+  color: aliceblue;
+}
+
+.contact-section .contact-info .info-item {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.contact-section .contact-info .info-item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-section .contact-info .info-item p {
+  font-size: 16px;
+  margin: 0;
+  color: #555555;
+}
+
+/* Designing Copyright Info */
+.copyright {
+  border-top: 1px solid #c5c5c5;
+  padding: 25px 15px;
+  text-align: center;
+  color: aliceblue;
+  font-size: 16px;
+  background: darkslateblue;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}/*# sourceMappingURL=style.css.map */

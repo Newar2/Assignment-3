@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+    <title>Pictures</title>
+</head>
+
+
+
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="trout">
+                    <a href="index.html">Trout Fish</a>
+                </div>
+                <div class="nav-toggle">
+                    <span class="ani01"></span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">Types</a></li>
+                        <li><a href="form.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <br>
+    <br>
+    
+    <section class="image_main">
+        <h1>Collection of trouts:</h1>
+        <div class="laketrout" style="max-width:500px;">
+            
+          
+            <img class="mySlides w3-animate-fading" src="img/brook trout/brooktrout2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/brook trout/brooktrout3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/brook trout/brooktrout4.jpg" style="width:100%">
+    
+            <img class="mySlides w3-animate-fading" src="img/laketrout/laketrout2.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/laketrout/lake trout 3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/laketrout/laketrout 4.jpg" style="width:100%">
+
+            <img class="mySlides w3-animate-fading" src="img/rainbow trout/rainbowtrout1.gif" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/rainbow trout/rainbowtrout3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/rainbow trout/rainbowtrout4.jpg" style="width:100%">
+
+
+            <img class="mySlides w3-animate-fading" src="img/cutthorat trout/cutthroattrout1.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/cutthorat trout/cutthroattrout3.jpg" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="img/cutthorat trout/cutthroattrout4.jpg" style="width:100%">
+        </div>
+    </section>
+<section class="videos">
+    <h2> Video of raising Trout</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jgXB3gInzJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <br>
+    <section class="back">
+        <a href="index.html">Back to home</a>
+    </section>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 1000);    
+        }
+        
+        </script>
+</body>
+</html>
